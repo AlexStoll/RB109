@@ -17,3 +17,4 @@ def fib_index_elements(array)
 end
 
 p fib_index_elements([10, 20, 30, 1, 4, 13, 16, 17, 19]) # == [20, 30, 1, 13, 19]
+p fib_index_elements(['dog', 'sheep', 'house', 'trombone', 'versimillitude'])
