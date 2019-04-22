@@ -1,6 +1,5 @@
 # select the elements in the array whose indexs are fibonacci numbers
 
-
 # define an is_fib?(num) method to return boolean
 # do an array.select with is_fib? providing the returns
 def is_fib?(num)
