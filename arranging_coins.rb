@@ -1,5 +1,23 @@
 # total of n coins
-# make a staircase where the kth row has k coins
+# return the number of complete staircase rows that
+# can be made
+
+#arrange_coins(15) #= 5
+
+# *
+# * *
+# * * *
+# * * * *
+# * * * * *
+
+#arrange_coins(14) #= 4
+
+# *
+# * *
+# * * *
+# * * * *    # last complete row
+# * * * *
+
 
 
 # Algorithm
@@ -12,6 +30,7 @@
 def arrange_coins(n)
   coin_pile = n
   current_row = 1
+
   loop do
     coin_pile -= current_row
     if coin_pile == 0
@@ -29,6 +48,8 @@ end
 # * * * *
 # * * * * *
 
-p arrange_coins(15)# == 5
-p arrange_coins(8)# == 4
+p arrange_coins(15) == 5
+p arrange_coins(8) == 3
+p arrange_coins(200) == 19
+p arrange_coins(131) == 15
 
